@@ -16,25 +16,12 @@ import base64
 from pycaret.nlp import *
 from plotly.graph_objs import *
 import re
-import gensim, spacy, logging, warnings
-import gensim.corpora as corpora
-from gensim.utils import simple_preprocess
-from gensim.models import CoherenceModel
 
 import warnings
-import tensorflow
+
 import matplotlib.pyplot as plt
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.utils import plot_model
-from tensorflow.keras.models import Sequential, Model
-from tensorflow.keras.layers import Dense, LSTM, RepeatVector, TimeDistributed, Flatten
-from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import train_test_split
 import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode, iplot
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-from sklearn.metrics import mean_squared_log_error, mean_squared_error, mean_absolute_error
-from sklearn.metrics import r2_score
 # Set seeds to make the experiment more reproducible.
 from numpy.random import seed
 seed(1)
