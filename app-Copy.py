@@ -22,39 +22,18 @@ import warnings
 import matplotlib.pyplot as plt
 import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode, iplot
-# Set seeds to make the experiment more reproducible.
-from numpy.random import seed
-seed(1)
-from tensorflow import random
-random.set_seed(1)
-
-import streamlit as st
-import pandas as pd
-import base64
 import time
-from pycaret.nlp import *
-import en_core_web_sm
+
 import plotly.figure_factory as ff
 import numpy as np
-from sklearn.manifold import TSNE
+
 import plotly.express as px
 from plotly.graph_objs import *
 import sys
-import re, numpy as np, pandas as pd
+
 from pprint import pprint
 
-# Gensim
-import gensim, spacy, logging, warnings
-import gensim.corpora as corpora
-from gensim.utils import simple_preprocess
-from gensim.models import CoherenceModel
-import matplotlib.pyplot as plt
 
-# NLTK Stop words
-from nltk.corpus import stopwords
-stop_words = stopwords.words('english')
-
-import subprocess
 def run_and_display_stdout(*cmd_with_args):
     result = subprocess.Popen(cmd_with_args, stdout=subprocess.PIPE)
     for line in iter(lambda: result.stdout.readline(), b""):
@@ -327,8 +306,7 @@ if option == "Summary of Statistics":
 # --------------------------------------------------------------------------------------------------------------------------------------------------
     
 
-    if sol_type == "Prediction of Chances of Death Caused by Road Accidents":
-        st.text("here goes Mithilesh's PyCaret-Power-BI integration")
+
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------------------- Time Series Classification ends here
